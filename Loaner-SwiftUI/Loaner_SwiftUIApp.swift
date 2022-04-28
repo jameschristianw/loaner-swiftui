@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Loaner_SwiftUIApp: App {
+    @StateObject private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            TestView()
+            ContentView().environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

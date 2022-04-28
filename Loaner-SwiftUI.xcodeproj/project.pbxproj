@@ -11,14 +11,26 @@
 		CA18CDA9281B002000612806 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18CDA8281B002000612806 /* ContentView.swift */; };
 		CA18CDAB281B002100612806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA18CDAA281B002100612806 /* Assets.xcassets */; };
 		CA18CDAE281B002100612806 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA18CDAD281B002100612806 /* Preview Assets.xcassets */; };
+		CA18CDB5281B0A8400612806 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18CDB4281B0A8400612806 /* TestView.swift */; };
+		CA18CDBB281B0EC800612806 /* Loaner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA18CDB9281B0EC800612806 /* Loaner.xcdatamodeld */; };
+		CA18CDBD281B0EE800612806 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18CDBC281B0EE800612806 /* DataController.swift */; };
+		CA18CDBF281B29BE00612806 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18CDBE281B29BE00612806 /* AddBookView.swift */; };
+		CA18CDC1281B2BDA00612806 /* AddLendingTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18CDC0281B2BDA00612806 /* AddLendingTo.swift */; };
+		CA18CDC4281B2C0400612806 /* AddLendingFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18CDC3281B2C0400612806 /* AddLendingFrom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA18CDA3281B002000612806 /* Loaner-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loaner-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA18CDA3281B002000612806 /* Loaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA18CDA6281B002000612806 /* Loaner_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loaner_SwiftUIApp.swift; sourceTree = "<group>"; };
 		CA18CDA8281B002000612806 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA18CDAA281B002100612806 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA18CDAD281B002100612806 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA18CDB4281B0A8400612806 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		CA18CDBA281B0EC800612806 /* Loaner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Loaner.xcdatamodel; sourceTree = "<group>"; };
+		CA18CDBC281B0EE800612806 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		CA18CDBE281B29BE00612806 /* AddBookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		CA18CDC0281B2BDA00612806 /* AddLendingTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLendingTo.swift; sourceTree = "<group>"; };
+		CA18CDC3281B2C0400612806 /* AddLendingFrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLendingFrom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +55,7 @@
 		CA18CDA4281B002000612806 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA18CDA3281B002000612806 /* Loaner-SwiftUI.app */,
+				CA18CDA3281B002000612806 /* Loaner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +63,14 @@
 		CA18CDA5281B002000612806 /* Loaner-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CA18CDC2281B2BE600612806 /* Sheet */,
 				CA18CDA6281B002000612806 /* Loaner_SwiftUIApp.swift */,
 				CA18CDA8281B002000612806 /* ContentView.swift */,
 				CA18CDAA281B002100612806 /* Assets.xcassets */,
+				CA18CDB4281B0A8400612806 /* TestView.swift */,
+				CA18CDB9281B0EC800612806 /* Loaner.xcdatamodeld */,
+				CA18CDBC281B0EE800612806 /* DataController.swift */,
+				CA18CDBE281B29BE00612806 /* AddBookView.swift */,
 				CA18CDAC281B002100612806 /* Preview Content */,
 			);
 			path = "Loaner-SwiftUI";
@@ -65,6 +82,15 @@
 				CA18CDAD281B002100612806 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA18CDC2281B2BE600612806 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				CA18CDC0281B2BDA00612806 /* AddLendingTo.swift */,
+				CA18CDC3281B2C0400612806 /* AddLendingFrom.swift */,
+			);
+			path = Sheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +110,7 @@
 			);
 			name = "Loaner-SwiftUI";
 			productName = "Loaner-SwiftUI";
-			productReference = CA18CDA3281B002000612806 /* Loaner-SwiftUI.app */;
+			productReference = CA18CDA3281B002000612806 /* Loaner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,6 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA18CDBD281B0EE800612806 /* DataController.swift in Sources */,
+				CA18CDC1281B2BDA00612806 /* AddLendingTo.swift in Sources */,
+				CA18CDBF281B29BE00612806 /* AddBookView.swift in Sources */,
+				CA18CDBB281B0EC800612806 /* Loaner.xcdatamodeld in Sources */,
+				CA18CDB5281B0A8400612806 /* TestView.swift in Sources */,
+				CA18CDC4281B2C0400612806 /* AddLendingFrom.swift in Sources */,
 				CA18CDA9281B002000612806 /* ContentView.swift in Sources */,
 				CA18CDA7281B002000612806 /* Loaner_SwiftUIApp.swift in Sources */,
 			);
@@ -281,7 +313,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PottatoDev.Loaner-SwiftUI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Loaner;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,7 +342,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PottatoDev.Loaner-SwiftUI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Loaner;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +371,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA18CDB9281B0EC800612806 /* Loaner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA18CDBA281B0EC800612806 /* Loaner.xcdatamodel */,
+			);
+			currentVersion = CA18CDBA281B0EC800612806 /* Loaner.xcdatamodel */;
+			path = Loaner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CA18CD9B281B002000612806 /* Project object */;
 }

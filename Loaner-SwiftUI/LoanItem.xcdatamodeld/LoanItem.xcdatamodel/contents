@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="LoanItem" representedClassName="LoanItem" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="String"/>
+        <attribute name="isLending" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="lendDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lendPayed" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="purpose" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="LoanItem" positionX="-63" positionY="-18" width="128" height="119"/>
+    </elements>
+</model>
