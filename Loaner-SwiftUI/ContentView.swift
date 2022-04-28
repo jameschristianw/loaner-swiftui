@@ -54,7 +54,7 @@ struct ContentView: View {
                     Spacer()
                     Text("Rp. \(String(loaner.amount))")
                         .multilineTextAlignment(.trailing)
-                }.padding().background(Rectangle().fill(Color.white))
+                }.padding().background(Rectangle().fill(Color.white)).listRowSeparator(.hidden)
             }.id(refreshingId)
         }
     }

@@ -53,9 +53,13 @@ struct AddLendingFrom: View {
                         fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
                     }
                 }
+                Button("Cancel"){
+                    dismiss()
+                }
             }
         }
         .navigationTitle("Lending money from")
+        .navigationBarTitleDisplayMode(.inline)
     }
     
     }
