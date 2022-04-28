@@ -75,7 +75,7 @@ struct ContentView: View {
                             .multilineTextAlignment(.leading).foregroundColor(Color.gray)
                     }
                     Spacer()
-                    Text( String(loaner.amount) )
+                    Text("Rp. \(String(loaner.amount))")
                         .multilineTextAlignment(.trailing)
                 }.padding().background(Rectangle().fill(Color.white))
             }.id(refreshingId)
