@@ -5,6 +5,9 @@
 //  Created by James Christian Wira on 29/04/22.
 //
 
+// App Icon is using free vector from
+// https://www.vectorstock.com/royalty-free-vector/book-money-growth-chart-investment-currency-vector-32434118
+
 import SwiftUI
 
 @main

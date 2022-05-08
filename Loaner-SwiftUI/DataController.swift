@@ -16,7 +16,7 @@ class DataController: ObservableObject {
             if let error = error {
                 print ("Core Data failed to load: \(error.localizedDescription)")
             }
-            print("init core data description \(description)")
+//            print("init core data description \(description)")
         }
     }
 }
