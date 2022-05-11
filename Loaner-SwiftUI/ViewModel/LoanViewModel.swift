@@ -35,7 +35,11 @@ class LoanViewModel: ObservableObject {
         item.purpose = purpose
         item.isLending = isLend
         item.amount = amount
-        item.lendDate = lendDate
+        if let editLoan = editLoan {
+            item.lendDate = editLoan.lendDate
+        } else {
+            item.lendDate = lendDate
+        }
         item.isPayed = false
         item.lendPayed = nil
         

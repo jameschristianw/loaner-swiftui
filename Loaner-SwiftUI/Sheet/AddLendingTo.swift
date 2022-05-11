@@ -83,15 +83,19 @@ struct AddLendingTo: View {
 //                    }
                     if let _ = loanItem.editLoan {
                         Text("Update")
+                            .frame(maxWidth: .infinity)
+                            .contentShape(RoundedRectangle(cornerRadius: 12))
                     } else {
                         Text("Save")
+                            .frame(maxWidth: .infinity)
+                            .contentShape(RoundedRectangle(cornerRadius: 12))
                     }
                 }
+                .frame(maxWidth: .infinity)
                 .disabled(loanItem.name.isEmpty)
                 .opacity(loanItem.name.isEmpty ? 0.6 : 1)
                 .padding()
                 .foregroundColor(.white)
-                .frame(maxWidth: .infinity)
                 .background(.blue, in: RoundedRectangle(cornerRadius: 12))
                 
                 if let item = loanItem.editLoan {
@@ -104,7 +108,7 @@ struct AddLendingTo: View {
 //                        HStack{
 //                            Image(systemName: "checkmark")
 //                        }
-                        Text("Mark as payed")
+                        Text("Mark as paid")
                     }
                     .padding()
                     .foregroundColor(.blue)
@@ -112,20 +116,6 @@ struct AddLendingTo: View {
                     .background(.white, in: RoundedRectangle(cornerRadius: 12))
                     
                 }
-                
-                Button {
-                    dismiss()
-                } label: {
-//                    HStack{
-//                        Image(systemName: "xmark")
-//                    }
-                    Text("Cancel")
-                }
-                .padding()
-                .foregroundColor(.red)
-                .frame(maxWidth: .infinity)
-                .background(.white, in: RoundedRectangle(cornerRadius: 12))
-                
                 
                 if let item = loanItem.editLoan {
                     Button {
@@ -149,6 +139,19 @@ struct AddLendingTo: View {
             .navigationTitle("Lending money to")
             .navigationViewStyle(.stack)
             .navigationBarTitleDisplayMode(.large)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        HStack{
+                            Image(systemName: "arrow.left")
+                        }
+                        Text("Back")
+                    }
+                    .foregroundColor(.white)
+                }
+            }
         }
     }
 }

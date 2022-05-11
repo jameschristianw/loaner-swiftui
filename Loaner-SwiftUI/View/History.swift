@@ -56,12 +56,14 @@ struct History: View {
                                 .fixedSize(horizontal: false, vertical: true)
                                 .foregroundColor(Color.gray)
                         }
+                        .frame(maxWidth: .infinity)
                         Divider()
                         VStack {
-                            Text("Payed at")
+                            Text("Paid at")
                             Text(loaner.lendPayed?.formatted(date: .abbreviated, time: .shortened) ?? "Unknown")
                                 .multilineTextAlignment(.center).foregroundColor(Color.gray)
                         }
+                        .frame(maxWidth: .infinity)
                         
                     }
                 }
@@ -101,12 +103,14 @@ struct History: View {
                                 .fixedSize(horizontal: false, vertical: true)
                                 .foregroundColor(Color.gray)
                         }
+                        .frame(maxWidth: .infinity)
                         Divider()
                         VStack {
-                            Text("Payed at")
+                            Text("Paid at")
                             Text(loaner.lendPayed?.formatted(date: .abbreviated, time: .shortened) ?? "Unknown")
                                 .multilineTextAlignment(.center).foregroundColor(Color.gray)
                         }
+                        .frame(maxWidth: .infinity)
                         
                     }
                 }

@@ -19,7 +19,7 @@ struct AddLendingFrom: View {
     
     init() {
         numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = .currency
+        numberFormatter.numberStyle = .currencyAccounting
         numberFormatter.maximumFractionDigits = 0
         numberFormatter.currencyCode = "IDR"
         
@@ -52,9 +52,11 @@ struct AddLendingFrom: View {
                         .font(.caption)
                         .foregroundColor(.gray)
                 
-                    TextField("Amount", value: $loanItem.amount, formatter: numberFormatter).keyboardType(.numberPad)
+                    TextField("Amount", value: $loanItem.amount, formatter: numberFormatter)
+                        .keyboardType(.numberPad)
                         .frame(maxWidth: .infinity)
                         .padding(.top, 10)
+                        
                 }
                 Divider()
                     .padding(.vertical, 8)
@@ -82,8 +84,12 @@ struct AddLendingFrom: View {
 //                    }
                     if let _ = loanItem.editLoan {
                         Text("Update")
+                            .frame(maxWidth: .infinity)
+                            .contentShape(RoundedRectangle(cornerRadius: 12))
                     } else {
                         Text("Save")
+                            .frame(maxWidth: .infinity)
+                            .contentShape(RoundedRectangle(cornerRadius: 12))
                     }
                 }
                 .disabled(loanItem.name.isEmpty)
@@ -103,7 +109,7 @@ struct AddLendingFrom: View {
 //                        HStack{
 //                            Image(systemName: "checkmark")
 //                        }
-                        Text("Mark as payed")
+                        Text("Mark as paid")
                     }
                     .padding()
                     .foregroundColor(.blue)
@@ -111,20 +117,20 @@ struct AddLendingFrom: View {
                     .background(.white, in: RoundedRectangle(cornerRadius: 12))
                     
                 }
-                
-                Button {
-                    dismiss()
-                } label: {
-//                    HStack{
-//                        Image(systemName: "xmark")
-//                    }
-                    Text("Cancel")
-                }
-                .padding()
-                .foregroundColor(.red)
-                .frame(maxWidth: .infinity)
-                .background(.white, in: RoundedRectangle(cornerRadius: 12))
-                
+//
+//                Button {
+//                    dismiss()
+//                } label: {
+////                    HStack{
+////                        Image(systemName: "xmark")
+////                    }
+//                    Text("Cancel")
+//                }
+//                .padding()
+//                .foregroundColor(.red)
+//                .frame(maxWidth: .infinity)
+//                .background(.white, in: RoundedRectangle(cornerRadius: 12))
+//
                 
                 if let item = loanItem.editLoan {
                     Button {
@@ -148,6 +154,19 @@ struct AddLendingFrom: View {
             .navigationTitle("Lending money from")
             .navigationViewStyle(.stack)
             .navigationBarTitleDisplayMode(.large)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        HStack{
+                            Image(systemName: "arrow.left")
+                        }
+                        Text("Back")
+                    }
+                    .foregroundColor(.white)
+                }
+            }
         }
     }
 }

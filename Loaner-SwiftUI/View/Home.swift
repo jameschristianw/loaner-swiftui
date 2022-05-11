@@ -98,7 +98,7 @@ struct Home: View {
                 .padding().background(Rectangle().fill(Color.white))
                 .onTapGesture {
                     loanItem.editLoan = loaner
-                    loanItem.showAddLendTo.toggle()
+                    loanItem.showAddLendFrom.toggle()
                     loanItem.setupLoanItem()
                 }
             }.id(refreshingId)
