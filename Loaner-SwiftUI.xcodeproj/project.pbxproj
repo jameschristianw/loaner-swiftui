@@ -16,6 +16,7 @@
 		CA18CDBD281B0EE800612806 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18CDBC281B0EE800612806 /* DataController.swift */; };
 		CA18CDC1281B2BDA00612806 /* AddLendingTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18CDC0281B2BDA00612806 /* AddLendingTo.swift */; };
 		CA18CDC4281B2C0400612806 /* AddLendingFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18CDC3281B2C0400612806 /* AddLendingFrom.swift */; };
+		CA52B9DB2848677A0029D660 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA52B9DA2848677A0029D660 /* Colors.swift */; };
 		CAF78F4628284DA30041DA5A /* LoanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF78F4528284DA30041DA5A /* LoanViewModel.swift */; };
 		CAF78F49282851CE0041DA5A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF78F48282851CE0041DA5A /* Home.swift */; };
 		CAF78F4C282869860041DA5A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF78F4B282869860041DA5A /* History.swift */; };
@@ -32,6 +33,7 @@
 		CA18CDBC281B0EE800612806 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		CA18CDC0281B2BDA00612806 /* AddLendingTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLendingTo.swift; sourceTree = "<group>"; };
 		CA18CDC3281B2C0400612806 /* AddLendingFrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLendingFrom.swift; sourceTree = "<group>"; };
+		CA52B9DA2848677A0029D660 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CAF78F4528284DA30041DA5A /* LoanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewModel.swift; sourceTree = "<group>"; };
 		CAF78F48282851CE0041DA5A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CAF78F4B282869860041DA5A /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		CA18CDA5281B002000612806 /* Loaner-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CA52B9D92848675D0029D660 /* Constants */,
 				CAF78F47282851C50041DA5A /* View */,
 				CAF78F4428284D840041DA5A /* ViewModel */,
 				CA18CDC2281B2BE600612806 /* Sheet */,
@@ -96,6 +99,14 @@
 				CA18CDC3281B2C0400612806 /* AddLendingFrom.swift */,
 			);
 			path = Sheet;
+			sourceTree = "<group>";
+		};
+		CA52B9D92848675D0029D660 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CA52B9DA2848677A0029D660 /* Colors.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		CAF78F4428284D840041DA5A /* ViewModel */ = {
@@ -186,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA18CDBD281B0EE800612806 /* DataController.swift in Sources */,
+				CA52B9DB2848677A0029D660 /* Colors.swift in Sources */,
 				CA18CDC1281B2BDA00612806 /* AddLendingTo.swift in Sources */,
 				CA18CDBB281B0EC800612806 /* Loaner.xcdatamodeld in Sources */,
 				CA18CDB5281B0A8400612806 /* TestView.swift in Sources */,

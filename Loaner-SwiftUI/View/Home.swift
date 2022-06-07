@@ -13,6 +13,8 @@ struct Home: View {
     @FetchRequest(sortDescriptors: [SortDescriptor(\.lendDate)], predicate: NSPredicate(format: "isLending = 1 AND isPayed = false")) var loaners: FetchedResults<LoanItem>
     @FetchRequest(sortDescriptors: [SortDescriptor(\.lendDate)], predicate: NSPredicate(format: "isLending = 0 AND isPayed = false")) var lendingFrom: FetchedResults<LoanItem>
     
+    @Environment(\.colorScheme) var colorScheme
+    
     @StateObject var loanItem: LoanViewModel = .init()
     
     @State private var isLoading = true
@@ -130,7 +132,7 @@ struct Home: View {
     
     var body: some View {
         ZStack{
-            Color(UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.00))
+            Color(colorScheme == .dark ? Colors().darkPrimary : Colors().lightPrimary)
             
             ScrollView{
                 VStack(alignment: .leading) {

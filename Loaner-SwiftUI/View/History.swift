@@ -10,6 +10,7 @@ import CoreData
 
 struct History: View {
     @Environment(\.self) var env
+    @Environment(\.colorScheme) var colorScheme
     
     @FetchRequest(sortDescriptors: [SortDescriptor(\.lendDate)], predicate: NSPredicate(format: "isLending = 1 AND isPayed = true")) var loaners: FetchedResults<LoanItem>
     @FetchRequest(sortDescriptors: [SortDescriptor(\.lendDate)], predicate: NSPredicate(format: "isLending = 0 AND isPayed = true")) var lendingFrom: FetchedResults<LoanItem>
@@ -137,7 +138,7 @@ struct History: View {
     var body: some View {
         NavigationView{
             ZStack{
-                Color(UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.00))
+                Color(colorScheme == .dark ?  Colors().darkPrimary : Colors().lightPrimary)
                 
                 ScrollView{
                     VStack(alignment: .leading) {
